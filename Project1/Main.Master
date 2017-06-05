@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Project1.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" style="background-color: #808080">
+        <div>
+            <img src="Images/bank-01.jpg" width="100%" height="250px" />
+
+        </div>
+        <br />
+        <div align="center">
+            <asp:Button ID="btnhome" runat="server" Text="Home" Height="36px" Width="123px" CssClass="auto-style1" OnClick="btnhome_Click" BackColor="White" BorderColor="#0099CC" />
+            <asp:Button ID="BtnAdminLogin" runat="server" Text="Admin Login" Height="36px" Width="123px" CssClass="auto-style1" OnClick="BtnAdminLogin_Click" BackColor="White" BorderColor="#0099CC" />
+            <asp:Button ID="btnUser" runat="server" Text="Customer Login" Height="36px" Width="123px" CssClass="auto-style1" OnClick="btnUser_Click" BackColor="White" BorderColor="#0099CC" />
+            <asp:Button ID="btnEmployee" runat="server" Text="Employee Login" Height="36px" Width="123px" CssClass="auto-style1" OnClick="btnEmployee_Click" BackColor="White" BorderColor="#0099CC" BorderStyle="Outset" />
+            <asp:Button ID="btnlogout" runat="server" Text="LogOut" Height="36px" Width="123px" CssClass="auto-style1" OnClick="btnlogout_Click" BackColor="White" BorderColor="#0099CC" />
+        </div>
+        <br />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <img src="Images/shutterstock_114687277.jpg" width="100%" height="200px" />
+        </div>
+    </form>
+</body>
+</html>
